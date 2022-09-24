@@ -1,0 +1,9 @@
+(executable
+ (name main)
+ (libraries js_of_ocaml lc)
+ (modes js))
+
+(env
+ (dev
+  (flags
+   (:standard -warn-error -A))))
