@@ -1,7 +1,9 @@
 (executable
  (name main)
  (libraries js_of_ocaml lc)
- (modes js))
+ (modes js)
+ (preprocess
+  (pps js_of_ocaml-ppx)))
 
 (env
  (dev
