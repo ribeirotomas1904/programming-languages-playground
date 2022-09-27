@@ -1,5 +1,7 @@
 (lang dune 3.4)
 
+(using menhir 2.1)
+
 (name playground)
 
 (generate_opam_files true)
@@ -21,6 +23,7 @@
  (depends
   ocaml
   dune
+  menhir
   js_of_ocaml-compiler
   js_of_ocaml
   js_of_ocaml-ppx

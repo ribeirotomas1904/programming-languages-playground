@@ -1,3 +1,13 @@
 (library
  (public_name playground.lc)
  (name lc))
+
+(ocamllex lexer)
+
+(menhir
+ (modules parser))
+
+(env
+ (dev
+  (flags
+   (:standard -warn-error -A))))
